@@ -1,3 +1,4 @@
+```markdown
 goodwin_model/
 │
 ├── goodwin_model/
@@ -16,3 +17,4 @@ goodwin_model/
 ├── requirements.txt
 ├── LICENSE
 └── main.py
+```
