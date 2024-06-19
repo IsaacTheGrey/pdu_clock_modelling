@@ -1,15 +1,31 @@
-# pdu_clock_modelling
-A collection of all the work done to model the circadian/circalunidian clock of the marine worm _Platynereis dumerilii_.
-The idea is getting a first model in which the oscillations are self sustained and the values of the transcripts recapitulate what is known experimentally.
+# Goodwin Model Simulation
 
-## Notes on how to proceed 
-Simplify for the first parameter optimization
-change all parameters by +- 20%
-degradation rates -> major effects on the period
-If the period gets too short -> reduce degradation rates
-Increasing Hill coefficient can restore oscillation
-When adding new terms -> start with small contributions
-S and W Hill coefficient = 1
+This project simulates the Goodwin model, a simplified circadian rhythm model.
+
+## Project Structure
+
+- `goodwin_model/`: Main package containing model definition, integration, analysis, and plotting modules.
+- `tests/`: Directory for unit tests.
+- `config.yaml`: Configuration file for model parameters.
+- `main.py`: Main script to run the simulation.
+- `requirements.txt`: File listing dependencies.
+
+## Usage
+
+1. Install dependencies:
+    ```
+    pip install -r requirements.txt
+    ```
+
+2. Run the simulation:
+    ```
+    python main.py
+    ```
+
+## Configuration
+
+Modify `config.yaml` to change the model parameters.
+
 
 ## Model details
 
