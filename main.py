@@ -2,6 +2,7 @@ import numpy as np
 from goodwin_model.integration import integrate_model
 from goodwin_model.analysis import normalize_oscillations, compute_periodogram
 from goodwin_model.plotting import plot_results
+from goodwin_model.peak_analysis import calculate_period_from_peaks
 import yaml
 
 def main():
@@ -26,11 +27,18 @@ def main():
     # Convert frequency to period in hours
     periods = 1 / frequencies
 
-    # Find the dominant period
+    # Find the dominant period from periodogram
     dominant_period_idx = np.argmax(power)
     dominant_period = periods[dominant_period_idx]
 
+    # Calculate period using peak analysis
+    peak_period, peaks = calculate_period_from_peaks(sol_PFL_asymp, dt)
+
+    # Plot results
     plot_results(t_asymp, sol_PFL_asymp, periods, power, dominant_period)
+
+    print(f"The dominant period from periodogram is approximately {dominant_period:.2f} hours.")
+    print(f"The average period from peak analysis is approximately {peak_period:.2f} hours.")
 
 if __name__ == "__main__":
     main()
