@@ -1,6 +1,6 @@
-# Goodwin Model Simulation
+# Goodwin-like model simulation of a circadian clock
 
-This project simulates the Goodwin model, a simplified circadian rhythm model.
+This project has the aim of simulating the circadian/circalunidian clock of the marine bristleworm _Platynereis dumerilii_ starting from known transcriptomic and (in the future) proteomic data.
 
 ## Project Structure
 
