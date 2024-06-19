@@ -33,13 +33,20 @@ $$
 \frac{dX}{dt} = \nu_1 (\frac{K_1^{hill}}{K_1^{hill} + Z^{hill} + S^{hill} + W^{hill}}) (b + cX +dW) - \nu_2(\frac{X}{K_2+X})
 $$
 
-X = CLK/BMAL (e-box activity)
+X = CLK/BMAL (e-box activity) 
+
 Y = PER/tr-CRY mRNA
+
 Z = PER/tr-CRY proteins (inhibitor complex)
+
 S = REV-ERB protein
+
 W = CWO protein
+
 b = basal CLK/BMAL activation
+
 dW = positive effect of CWO
+
 
 - $\nu_1$ is the maximum transcription rate of BMAL/CLK (X)
 - $\frac{K_1^{hill}}{K_1^{hill} + Z^{hill} + S^{hill} + W^{hill}}$ represents competitive inhibition of X by PER/CRY (Z), REV-ERB (S), and CWO (W) proteins binding to E-boxes/ROR elements
